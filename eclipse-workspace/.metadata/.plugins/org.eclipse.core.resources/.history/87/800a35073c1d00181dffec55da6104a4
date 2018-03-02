@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class garage {
+	static ArrayList<vehicle> vehicleArray = new ArrayList<vehicle>();
+	
+	
+public static void calculateBill() {
+	
+	for (vehicle v : vehicleArray) {
+		
+		System.out.print("Cost of " + v.type + ": £");
+		System.out.println(((vehicle) v).bill());
+		System.out.println("---------------------------");
+		
+		}
+	
+}
+
+public static void addVehicle() {
+	String answer = "";
+	Scanner input = new Scanner(System.in);
+	System.out.println("Do you want to add a vehicle?");
+	answer = input.next();
+	
+	if(answer.equals("yes")) {
+	for (vehicle v : vehicleArray) {
+		Scanner inputId = new Scanner(System.in);
+		System.out.println("Enter Vehicle ID");
+		v.type =  inputId.next();
+	}
+	}
+}
+
+
+}

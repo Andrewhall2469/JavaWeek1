@@ -1,0 +1,20 @@
+public class vehicle{
+	int id;
+	int numberOfWheels;
+	boolean motorised;
+	String colour;
+	String makeAndModel;
+	String vinNo;
+	int cost;
+	
+	public vehicle(int id, int numberOfWheels, boolean motorised, String colour, String makeAndModel, String vinNo) {
+		this.id = id;
+		this.numberOfWheels = numberOfWheels;
+		this.motorised = motorised;
+		this.colour = colour;
+		this.makeAndModel = makeAndModel;
+		this.vinNo = vinNo;
+	}
+	
+}
+

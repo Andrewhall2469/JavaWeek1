@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Excersise1 {
+
+	public static void main(String[] args)
+	{
+		//Assignment
+		String helloWorld = ("Hello World!");
+		System.out.println(helloWorld);
+		
+		//Paramaters
+		String name = ("What is your name?");
+		System.out.println(name);
+		Scanner scan = new Scanner(System.in);
+		String output = scan.nextLine();
+		
+		
+//		scan.close();
+	}
+	
+}

@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Adventure {
+
+	public void main(String[] args) {
+		playerInput();
+	}
+	
+
+	private void playerInput() {
+		String input = "";
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Hello and welcome to the worst game of your life! Press <ENTER> to continue");
+		scanner.nextLine();
+		System.out.println("You wake up find yourself stranded in the middle of the ocean\n"
+				+ "There is no sign of life for miles\n"
+				+ "Luckily your Michael Phelps on steroids\n"
+				+ "You notice attached to your wrist is a small watch-like device\n"
+				+ "But it only seems to read numbers\n"
+				+ "------------------------------------------------------------------------\n"
+				+ "The watch reads 5 miles to destination\n"
+				+ "Try 'north', 'south', 'east' or 'west' to move");
+		input = scanner.nextLine();
+	}
+	
+	private void grid() {
+	    String[][] array = { 
+	    };
+	    int[][] board = new int[9][9];
+	    for (int xAxis = 0; xAxis < board.length; xAxis++) { 
+	    	for (int yAxis = 0; yAxis < board[xAxis].length; yAxis++) { 
+
+	            board[xAxis][yAxis] = xAxis + yAxis;
+	    	 }
+	    }
+	    
+	    for (int[] a : board) {
+	        for (int i : a) {
+	            System.out.print(i + "\t");
+	        }
+	        System.out.println("\n");
+	    }
+	}
+
+}

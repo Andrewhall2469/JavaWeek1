@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class WorkingWithFiles {
+	
+public class Person {
+		String name;
+		String occupation;
+		int age;
+		
+		
+public Person(String name, String occupation, int age){
+			super();
+			this.name = name;
+			this.occupation = occupation;
+			this.age = age;
+			
+}
+		
+	}
+
+}

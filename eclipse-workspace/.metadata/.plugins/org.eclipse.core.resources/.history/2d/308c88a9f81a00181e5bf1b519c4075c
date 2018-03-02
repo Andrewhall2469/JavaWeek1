@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Excersise1 {
+
+	public static void main(String[] args)
+	{
+		//Assignment
+		String helloWorld = ("Hello World!");
+		System.out.println(helloWorld);
+		
+		//Paramaters and return types
+		String name = ("What is your name?");
+		System.out.println(name);
+		Scanner scan = new Scanner(System.in);
+		String output = scan.nextLine();
+		System.out.println("Hello" + output + " Press Enter to continue!");
+		scan.nextLine();
+		
+		//Parameters/Operators
+		System.out.println("Enter first number for addition");
+		int firstNumber = scan.nextInt();
+		scan.nextLine();
+		System.out.println("Enter second number for addition");
+		int secondNumber = scan.nextInt();
+		scan.nextLine();
+		int result = firstNumber + secondNumber;
+		System.out.println((firstNumber) + (secondNumber) + "=" + result);
+//		scan.close();
+	}
+	
+}

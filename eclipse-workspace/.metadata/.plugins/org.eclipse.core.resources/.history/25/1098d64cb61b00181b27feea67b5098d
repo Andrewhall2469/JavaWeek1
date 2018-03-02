@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+public class People {
+	static String name;
+	static int age;
+	static String jobTitle;
+	
+	People(String name, int age, String jobTitle){
+		this.name = name;
+		this.age = age;
+		this.jobTitle = jobTitle;
+	}
+	
+
+public static void main(String args[]){
+
+	People p1 = new People("Andy", 23, "QAC");
+	People p2 = new People("Shaun", 22, "QAC");
+	People p3 = new People("John", 23, "QAC");
+	People p4 = new People("Bill", 22, "QAC");
+	People p5 = new People("Jerry", 23, "QAC");
+	People p6 = new People("Gareth", 22, "QAC");
+	People p7 = new People("Chris", 23, "QAC");
+	People p8 = new People("Mike", 22, "QAC");
+	ArrayList<People> peopleArray = new ArrayList<People>();
+	peopleArray.add(p1);
+	peopleArray.add(p2);
+	peopleArray.add(p3);
+	peopleArray.add(p4);
+	peopleArray.add(p5);
+	peopleArray.add(p6);
+	peopleArray.add(p7);
+	peopleArray.add(p8);
+	
+	StringBuilder sb = new StringBuilder();
+	for (People p: peopleArray) {
+		sb.append(p);
+	    sb.append("\n");
+
+	}
+	System.out.println(sb.toString());
+	
+	System.out.println("Enter name to be searched");
+	Scanner scan = new Scanner(System.in);
+	String s = scan.next();
+	System.out.println(s);
+	
+	if (s == name) {
+		System.out.println(name + age + jobTitle);
+	}
+		
+		
+}	
+
+public String toString() {
+	return name + " " + age + " " + jobTitle;
+}
+
+
+public static void nameSearch(String name) {
+	System.out.println("Enter name to be searched");
+	Scanner scan = new Scanner(System.in);
+	String s = scan.next();
+	System.out.println(s);
+	
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class garage {
+	static ArrayList<vehicle> vehicleArray = new ArrayList<vehicle>();
+	
+	
+public static void calculateBill() {
+	
+	for (vehicle v : vehicleArray) {
+		
+		System.out.print("Cost of "+ v.type + " " + v.id + ": £");
+		System.out.println(((vehicle) v).bill());
+		System.out.println("---------------------------");
+		
+		}
+	
+}
+
+public static void addVehicle(vehicle v) {
+	int i = 0;
+	while (i <= vehicleArray.size()) {
+	vehicleArray.add(v);
+	System.out.println("New Vehicle Added: ");
+	i--;
+	}
+}
+
+public static void removeVehicle(vehicle v) {
+	
+}
+
+public static void closeGarageDown(vehicle v) {
+	vehicleArray.clear();
+	System.out.println("Sorry the garage has closed down.. you can go now");
+}
+
+
+}

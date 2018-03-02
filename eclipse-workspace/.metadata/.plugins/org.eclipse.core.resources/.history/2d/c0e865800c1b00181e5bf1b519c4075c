@@ -1,0 +1,44 @@
+
+public class Excersise2 {
+	public static void main(String[] args)
+	{
+//		blackjack(12,19);
+//		blackjack(0,19);
+//		blackjack(29,35);
+//		blackjack(18,1);
+//		blackjack(14,20);
+		System.out.print(uniqueSum(12, 13, 14));
+		System.out.print(uniqueSum(12, 12, 14));
+		System.out.print(uniqueSum(12, 12, 23));
+		System.out.print(uniqueSum(14, 13, 14));
+		
+		
+	}
+	public static void blackjack(int value1, int value2) {
+
+		if (value1 > 21 && value2 > 21) {
+			System.out.println("0");	
+		}
+		else if (21 - value1 < 21 - value2 ) {
+			System.out.println(value1 + " Is the closest value to 21");
+		}
+		else if(21 - value1 > 21 - value2) {
+			System.out.println(value2 + " Is the closest value to 21");
+		}
+	}
+
+	public static int uniqueSum(int value1, int value2, int value3) {
+		if (value1 == value2 || value1 == value3)
+		{
+			value1 = 0;
+		}
+		if (value2 == value3) {
+			value2 = 0;
+		}
+		int result = value1 + value2 + value3;
+		System.out.println(result);
+		return result;
+		}
+		
+	
+}

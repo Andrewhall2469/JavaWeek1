@@ -1,0 +1,19 @@
+
+public class car extends vehicle {
+	public String fuelGrade;
+	public int numOfDoors;
+	
+	
+	public car(int numberOfWheels, boolean motorised, String colour, String weight, String makeAndModel, String vinNo, 
+			String fuelGrade, int numOfDoors) {
+		super(numberOfWheels, motorised, colour, makeAndModel, vinNo);
+		this.fuelGrade = fuelGrade;
+		this.numOfDoors = numOfDoors;
+		
+	}
+	public String toString() {
+		return numberOfWheels + " " + motorised + " " + colour + " " + makeAndModel + " " + vinNo + " " + fuelGrade 
+				+ " " + numOfDoors;
+	}
+
+}

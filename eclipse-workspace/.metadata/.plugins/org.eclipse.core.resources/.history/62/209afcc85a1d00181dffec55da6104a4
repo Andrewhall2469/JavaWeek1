@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]){
+			garage grg = new garage();
+
+			car c1 = new car(101, "car", 3, true, "blue", "Renault Megane", "A37FHGUI48", "Diesel", 5);
+			motorcycle m1 = new motorcycle(102, "motorcycle", 2, true, "black", "Ducati Monster", "AJDHJFHD", "600cc", "Pirelli");
+			airplane b1 = new airplane(103, "airplane", 2, true, "white", "AIRFORCE1", "DFHHDFWE8", 2, 354);
+		
+			grg.addVehicle(c1);
+			grg.addVehicle(m1);
+			grg.addVehicle(b1);
+			grg.addVehicle(c1);
+			
+			
+			
+			StringBuilder sb = new StringBuilder();
+			for (vehicle v: grg.vehicleArray) {
+				sb.append(v);
+				System.out.println("New Vehicle Added: ");
+			    sb.append("\n");
+			    
+
+			}
+			System.out.println(sb.toString());
+			grg.calculateBill();
+			
+			
+		}
+	
+}

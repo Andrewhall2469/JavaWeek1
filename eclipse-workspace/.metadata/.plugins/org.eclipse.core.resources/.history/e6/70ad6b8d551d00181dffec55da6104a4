@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class garage {
+	static ArrayList<vehicle> vehicleArray = new ArrayList<vehicle>();
+	
+	
+public static void calculateBill() {
+	
+	for (vehicle v : vehicleArray) {
+		
+		System.out.print("Cost of " + v.type + " No:" + v.id + ": £");
+		System.out.println(((vehicle) v).bill());
+		System.out.println("---------------------------");
+		
+		}
+	
+}
+
+public static void addVehicle(vehicle v) {
+
+	vehicleArray.add(v);	
+	
+}
+
+
+}

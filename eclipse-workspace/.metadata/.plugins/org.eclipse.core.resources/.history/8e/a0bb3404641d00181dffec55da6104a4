@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]){
+			garage grg = new garage();
+
+			car c1 = new car(101, "car", 3, true, "blue", "Renault Megane", "A37FHGUI48", "Diesel", 5);
+			motorcycle m1 = new motorcycle(102, "motorcycle", 2, true, "black", "Ducati Monster", "AJDHJFHD", "600cc", "Pirelli");
+			airplane b1 = new airplane(103, "airplane", 2, true, "white", "AIRFORCE1", "DFHHDFWE8", 2, 354);
+			car c2 = new car(104, "car", 3, true, "blue", "Renault Megane", "A37FHGUI48", "Diesel", 5);
+
+			grg.addVehicle(c1);
+			grg.addVehicle(m1);
+			grg.addVehicle(b1);
+			grg.addVehicle(c2);
+			
+			
+			
+			StringBuilder sb = new StringBuilder();
+			for (vehicle v: grg.vehicleArray) {
+				sb.append("New Vehicle Added: " + v);
+			    sb.append("\n");
+			    sb.append("--------------------------------------------------------------------------------------------");
+			    sb.append("\n");
+
+			}
+			System.out.println(sb.toString());
+			grg.calculateBill();
+			grg.removeVehicleByType("car");
+			StringBuilder sbb = new StringBuilder();
+			for (vehicle v: grg.vehicleArray) {
+				sbb.append(v);
+			    sbb.append("\n");
+			    sbb.append("--------------------------------------------------------------------------------------------");
+			    sbb.append("\n");
+			}
+			    System.out.println(sbb.toString());
+//			System.out.println("New Version of Garage after removing");
+//			System.out.println(grg.vehicleArray);
+			
+			
+		}
+	
+}

@@ -1,0 +1,90 @@
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class garage {
+	static ArrayList<vehicle> vehicleArray = new ArrayList<vehicle>();
+	
+	
+public static void calculateBill() {
+	
+	for (vehicle v : vehicleArray) {
+		
+		System.out.print("Cost of " + v.type + ": £");
+		System.out.println(((vehicle) v).bill());
+		System.out.println("---------------------------");
+		
+		}
+	
+}
+
+public static void addQuestions() {
+	
+	for (vehicle v : vehicleArray) {
+		canner input2 = new Scanner(System.in);
+		System.out.println("How many wheels does the vehicle have?");
+		v.numberOfWheels = input2.nextInt();
+		
+		System.out.println("Is the vehicle motorised? Enter true or false");
+		v.motorised = input2.nextBoolean();
+		
+		System.out.println("What colour is the vehicle?");
+		v.colour = input2.next();
+		
+		System.out.println("What is the make and model of the vehicle?");
+		v.colour = input2.next();
+		
+		System.out.println("What is the Vin number of the vehicle??");
+		v.vinNo = input2.next();
+	}
+	
+	
+}
+
+public static void addVehicle() {
+	String answer = "";
+	Scanner input = new Scanner(System.in);
+	System.out.println("Do you want to add a vehicle?");
+	answer = input.next();
+	
+	if(answer.equals("yes")) {
+	for (vehicle v : vehicleArray) {
+		Scanner input2 = new Scanner(System.in);
+		System.out.println("Enter Vehicle ID");
+		v.id =  input2.nextInt();
+		
+		
+		System.out.println("What kind of vehicle are you adding? (car, motorcylce or an airplane?");
+		v.type =  input2.next();
+		
+		if (v.type == "car") {
+			addQuestions();
+			
+			System.out.println("What is the cars grade of fuel?");
+			v.colour = input2.next();
+			
+			System.out.println("How many doors does the car have?");
+			v.colour = input2.next();
+			
+			
+			
+			
+			
+		}
+		else if (v.type == "motorcycle") {
+			
+		}
+		else if (v.type == "airplane") {
+			
+		}
+		
+		
+		
+	}
+	}
+	
+}
+
+
+
+}

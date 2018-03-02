@@ -1,0 +1,29 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileRunner {
+	private final static String FileRunner = "C:\\Users\\Admin\\Desktop\\FileRunner.txt";
+	
+	public static void main(String[] args) throws IOException {
+		
+		
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(FileRunner))) {
+
+			String content = "Write to this file";
+			
+			
+			bw.write(content);
+			
+			System.out.println("Done");
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		
+	} 
+
+		
+	}
+
+}
