@@ -1,9 +1,0 @@
-import java.util.Scanner;
-
-public class Player extends Adventure {
-
- public void playerInput() {
-	 
-	 
- }
-}
