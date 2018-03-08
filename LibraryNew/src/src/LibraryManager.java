@@ -19,6 +19,7 @@ public class LibraryManager {
 	 
 	 public void addItem(Item i) 
 	 {
+		
 		itemArray.add(i);
 	 }
 	 
