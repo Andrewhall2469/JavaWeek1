@@ -18,11 +18,11 @@ public class Runner {
 
 	public static void populateLibrary(LibraryManager l) {
 		Book b1 = new Book(101, "Y", 55, "Cat in the hat", "Dr. Seuss");
-		Book b2 = new Book(102, "Y", 55, "Cat in the hat", "Dr. Seuss");
-		Book b3 = new Book(103, "Y", 55, "Cat in the hat", "Dr. Seuss");
-		Book b4 = new Book(104, "Y", 55, "Cat in the hat", "Dr. Seuss");
+		Book b2 = new Book(102, "Y", 105, "Bat in the rat", "Carl Smith");
+		Book b3 = new Book(103, "Y", 55, "The Three Penguins", "John Johnson");
+		Book b4 = new Book(104, "Y", 55, "The four lions", "Michael Jackson");
 		Map m1 = new Map(105, "N", 55, "England", "Atlas R Us");
-		Newspaper n1 = new Newspaper(106, "Y", 55, "Cat in the hat", "Dr. Seuss");
+		Newspaper n1 = new Newspaper(106, "Y", 55, "The Sun", "Tabloid");
 		l.addItem(b1);
 		l.addItem(b2);
 		l.addItem(b3);
@@ -86,7 +86,7 @@ public class Runner {
 		{
 			if (secondInput.equalsIgnoreCase("A")) 
 			{
-//			
+			System.out.println("Enter the new ID for the user");
 			i++;
 			}
 			else if (secondInput.equalsIgnoreCase("D")) 

@@ -7,8 +7,7 @@ public class Garage {
 	 ArrayList<vehicle> vehicleArray = new ArrayList<vehicle>();
 	
 	
-public 
-void calculateBill() {
+public void calculateBill() {
 	
 	for (vehicle v : vehicleArray) {
 		
